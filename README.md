@@ -2,6 +2,10 @@
 
 使用 docker.io 来提供（但不限于） gcr.io、k8s.gcr.io、quay.io、ghcr.io 等国外镜像加速下载服务
 
+个人修改:
+
+* docker.io 仓库中的镜像名称和来源一样，不添加源站点的前缀
+
 # 使用
 
 ## 1. 白嫖我的，点个 Star ，直接提交 issues
