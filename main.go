@@ -79,7 +79,7 @@ func main() {
 
 		//target := *username + "/" + strings.ReplaceAll(source, "/", ".")
 		source_split := strings.Split(source, "/")
-		target := *username + "/" + source_split[-1]
+		target := *username + "/" + source_split[len(source_split)-1]
 
 		wg.Add(1)
 		go func(source, target string) {
