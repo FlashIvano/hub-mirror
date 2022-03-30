@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 	"os"
-	//"strings"
+	"strings"
 	"sync"
 	"text/template"
 
@@ -78,7 +78,8 @@ func main() {
 		}
 
 		//target := *username + "/" + strings.ReplaceAll(source, "/", ".")
-		target := *username + "/"
+		source_split := strings.Split(source, "/")
+		target := *username + "/" + source_split[-1]
 
 		wg.Add(1)
 		go func(source, target string) {
