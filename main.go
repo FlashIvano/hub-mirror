@@ -77,7 +77,8 @@ func main() {
 			continue
 		}
 
-		target := *username + "/" + strings.ReplaceAll(source, "/", ".")
+		//target := *username + "/" + strings.ReplaceAll(source, "/", ".")
+		target := *username + "/"
 
 		wg.Add(1)
 		go func(source, target string) {
